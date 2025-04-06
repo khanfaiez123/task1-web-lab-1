@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Personal Portfolio</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 0; padding: 0; }
+    header, nav, section, footer { padding: 20px; }
+    nav a { margin: 0 15px; text-decoration: none; color: #333; }
+    nav a:hover { text-decoration: underline; }
+    .container { max-width: 1000px; margin: auto; }
+    form { display: flex; flex-direction: column; gap: 10px; max-width: 500px; }
+    label { font-weight: bold; }
+    input, textarea { padding: 8px; }
+  </style>
+</head>
+<body>
+  <header class="container">
+    <h1>Welcome to My Portfolio</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="projects.html">Projects</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <section class="container">
+    <h2>About Me</h2>
+    <p>Hello! I'm a passionate developer creating modern and responsive web applications.</p>
+    <img src="profile.jpg" alt="Profile Picture" width="200">
+  </section>
+
+  <section class="container">
+    <h2>Video Introduction</h2>
+    <video width="480" controls>
+      <source src="intro.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </section>
+
+  <section class="container">
+    <h2>Find Me Here</h2>
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.8354345093776!2d144.9537353153183!3d-37.81627974201352!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad642af0f11fd81%3A0xf577c2d1c6024a0!2sFederation+Square!5e0!3m2!1sen!2sau!4v1510919873674"
+      width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy">
+    </iframe>
+  </section>
+
+  <section class="container">
+    <h2>Contact Me</h2>
+    <form action="#" method="post">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" placeholder="Your name" required>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" placeholder="Your email" required>
+
+      <label for="message">Message:</label>
+      <textarea id="message" name="message" placeholder="Your message" rows="5" required></textarea>
+
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <footer class="container">
+    <p>&copy; 2025 My Portfolio. All rights reserved.</p>
+  </footer>
+</body>
+</html>
